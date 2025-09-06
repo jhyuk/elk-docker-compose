@@ -1,0 +1,81 @@
+# ELK Stack Docker Compose .gitignore
+
+# Docker volumes and data
+elasticsearch/data/
+logstash/data/
+kibana/data/
+
+# Docker Compose overrides
+docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.dev.yml
+
+# Environment variables
+.env
+.env.local
+.env.prod
+.env.dev
+
+# Logs
+*.log
+logs/
+elk-logs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Elasticsearch snapshots
+snapshots/
+
+# SSL certificates (if storing locally)
+certs/
+certificates/
+*.pem
+*.key
+*.crt
+*.p12
+
+# Backup files
+*.backup
+*.bak
+
+# Node.js (if using Node-based log generators)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if using Python-based log generators)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Custom configuration overrides
+config/custom/
+local-config/
+
+# Documentation builds
+docs/_build/
+site/
